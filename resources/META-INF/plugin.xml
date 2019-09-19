@@ -1,0 +1,29 @@
+<idea-plugin>
+  <id>com.mikeescom</id>
+  <name>Intent Step Builder Generator</name>
+  <version>1.0</version>
+  <vendor email="msmikeescom@gmail.com" url="">mikeescom</vendor>
+
+  <description><![CDATA[
+      This plug in help you to create a builder class that generates an Intent.
+      The created class follows the Step Builder pattern and provides the getters
+      to get the data from the intent in the target activity.<br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="173.0"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+    <action id="IntentBuilderAction" class="com.mikeescom.IntentBuilderAction" text="Generate Intent Builder" description="The action implemented by IntentBuilder">
+      <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="JavaGenerateGroup2"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt M"/>
+    </action>
+  </actions>
+
+</idea-plugin>
